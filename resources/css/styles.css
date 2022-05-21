@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:rgb(234,229,229);
+    --color-black:rgb(0,0,0);
+    --primary-color:#3ed1c2;
+    --white-color:rgb(255,255,255);
+}
+body{
+    background-color: var(--background-color);
+    padding: 3% 12%;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Macondo', cursive;
+    /* font-family: 'Nunito Sans', sans-serif; */
+}
+/* _______________ first section ___________________ */
+.myName{
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+/* _______________ header section ___________________ */
+
+#header__container{
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 2%;
+}
+.header__container--item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.header__container--item-link{
+    color: var(--color-black);
+    text-decoration: none;
+    margin-left: 1.3rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    padding-top: 2%;
+}
+.header__container--item-link:hover{
+    color: var(--primary-color);
+    transition: color .4s ease;
+}
+.header__container--item-active{
+    color: var(--primary-color);
+}
+/* _______________ container section ___________________ */
+
+#content__container{
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+}
+.profile-img{
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid var(--primary-color);
+}
+.content__title{
+    margin:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.paragraph{
+    font-size: 1rem;
+}
+.content__title .first-p{
+    font-size: 7rem;
+    font-weight: bold;
+}
+.content__title .second-p{
+    font-size: 3rem;
+}
+.subject__container{
+    margin-top: 16%;
+}
+.subject__container--link{
+    padding: 50px 30px;
+    margin-left: 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.resum-link{
+    background-color: #b43434;
+}
+.work-link{
+    background-color: var(--primary-color);
+}
+.skills-link{
+    background-color: #b6d40a;
+}
+.text{
+    margin-top: 16%;
+    text-align: justify;
+}
+#footer{
+    padding: 4%;
+    width: 100%;
+    background-color: #b43434;
+}

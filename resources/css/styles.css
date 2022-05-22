@@ -5,18 +5,23 @@
 }
 :root{
     --background-color:rgb(234,229,229);
-    --color-black:rgb(0,0,0);
+    --color-black:#000000e0;
+    --color-gray:#000000a9;
     --primary-color:#3ed1c2;
+    --secondary-color:#d14e4e;
+    --ternary-color:#b0c539;
     --white-color:rgb(255,255,255);
 }
 body{
     background-color: var(--background-color);
-    padding: 3% 12%;
     /* font-family: 'Bebas Neue', cursive; */
     font-family: 'Macondo', cursive;
     /* font-family: 'Nunito Sans', sans-serif; */
 }
 /* _______________ first section ___________________ */
+.container{
+    padding: 3% 12%;
+}
 .myName{
     font-weight: bold;
     font-size: 45px;
@@ -32,10 +37,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 .header__container--item-link{
-    color: var(--color-black);
+    color: var(--color-gray);
     text-decoration: none;
     margin-left: 1.3rem;
     font-size: 1.2rem;
@@ -55,6 +61,7 @@ body{
     padding-top: 6%;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 .profile-img{
     border-radius: 50%;
@@ -89,21 +96,49 @@ body{
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+.subject__container--link:hover{
+    /* opacity: 0.8; */
+    /* color: var(--color-black); */
+    background-color: var(--color-gray);
+    transition: background-color .8s ease 0s;
+}
+
 .resum-link{
-    background-color: #b43434;
+    background-color: var(--secondary-color);
 }
 .work-link{
     background-color: var(--primary-color);
 }
 .skills-link{
-    background-color: #b6d40a;
+    background-color: var(--ternary-color);
 }
 .text{
     margin-top: 16%;
     text-align: justify;
+    color: var(--color-gray);
 }
-#footer{
+footer#footer{
     padding: 4%;
     width: 100%;
     background-color: #b43434;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__container--item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer__container--item p{
+    color: var(--white-color);
+}
+.icon{
+    font-size: 1.6rem;
+    padding: 0.8rem 1rem;
+    margin-right: 0.5rem;
+    /* background-color: var(--primary-color); */
+    border-radius: 50%;
+    color: var(--primary-color);
 }
